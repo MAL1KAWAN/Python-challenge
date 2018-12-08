@@ -2,8 +2,8 @@ import os
 import csv
 print("Election Results ")
 print("------------------------------")
-budgetCSV = os.path.join("." , "Resources", "election_data.csv")
-with open(budgetCSV, newline='') as csvfile:
+electionCSV = os.path.join("." , "Resources", "election_data.csv")
+with open(electionCSV, newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)
     count = 0
